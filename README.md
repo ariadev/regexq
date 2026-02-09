@@ -35,6 +35,27 @@ regexq start date end
 
 RegexQ is a single Python file with **zero dependencies** (just Python 3.10+ standard library).
 
+### Quick Install (Recommended)
+
+Use the one-line installer:
+
+```bash
+# Clone and install
+git clone https://github.com/astroteam-ir/regexq.git
+cd regexq
+./install.sh
+```
+
+The installer will:
+- Check your Python version (requires 3.10+)
+- Install regexq to `/usr/local/bin` or `~/.local/bin`
+- Make it executable and ready to use
+- Guide you if PATH configuration is needed
+
+### Manual Installation
+
+If you prefer manual installation:
+
 ```bash
 # Clone the repo
 git clone https://github.com/astroteam-ir/regexq.git
@@ -46,7 +67,10 @@ chmod +x regexq.py
 # Option 1: Symlink into PATH
 ln -s "$(pwd)/regexq.py" /usr/local/bin/regexq
 
-# Option 2: Just alias it
+# Option 2: Copy to a directory in PATH
+cp regexq.py ~/.local/bin/regexq
+
+# Option 3: Just alias it
 echo 'alias regexq="python3 /path/to/regexq.py"' >> ~/.bashrc
 ```
 
